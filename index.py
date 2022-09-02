@@ -9,7 +9,7 @@ url = "WEBHOOK URL"
 
 data = {
     "content" : "Sup",
-    "username" : "Hooka"
+    "username" : "Dad Joke Delivery"
 }
 
 newhead = {
