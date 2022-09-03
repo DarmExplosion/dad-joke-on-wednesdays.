@@ -9,7 +9,7 @@ url = "WEBHOOK URL"
 
 data = {
     "content" : "Sup",
-    "username" : "Hooka"
+    "username" : "Dad Joke Delivery!"
 }
 
 newhead = {
@@ -31,7 +31,7 @@ while True:
         print(y["joke"])
         data = {
             "content" : y["joke"],
-            "username" : "Hooka"
+            "username" : "Dad Joke Delivery!"
         }
         result = requests.post(url, json = data)
         try:
