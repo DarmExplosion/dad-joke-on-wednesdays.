@@ -9,7 +9,7 @@ url = "WEBHOOK URL"
 
 data = {
     "content" : "Sup",
-    "username" : "Dad Joke Delivery"
+    "username" : "Hooka"
 }
 
 newhead = {
@@ -22,7 +22,8 @@ while True:
     z = calendar.day_name[d.weekday()]
     print('Weekday name is:', z)
 
-    if z == "Wednesday":
+    if z == "Friday":
+        sleepytimer = 60
         print(datetime.now().weekday())
         x = requests.get("https://icanhazdadjoke.com/", headers = newhead)
         print(x.content)
@@ -39,5 +40,7 @@ while True:
             print(err)
         else:
             print("Payload delivered successfully, code {}.".format(result.status_code))
-    sleep(100)
+    else:
+        sleepytimer = 3600
+    sleep(sleepytimer)
     
